@@ -177,12 +177,14 @@
 	// -> start about me
 	let aboutMe_ListOfParagraphs = [
 		`
-		hello there , i'm Amir Mohammad!  
-		i'm a backend developer (i do the dirty works in the backend of the site &#128521;).
-		i love learning new thing and share my knowledge with you 
+		Hello there ,
+		<br>I'm Amir Mohammad! and i am a backend developer (simply means doing the dirty works in the backend of the site &#128521;).
+		i love learning new things and with what i knew , i would help others and share it only on one circumstances which that is 
+		catching up the best of ourselves. 
 		`,
 		`
-		
+		I'm also into sport, although not eventually doing it professionally but i'll try to put some time in my day rotins ,
+		sometimes it's hiking and some other time running
 		`,
 	]
 	aboutMe_ListOfParagraphs.forEach(function(paragraph){

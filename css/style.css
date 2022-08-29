@@ -639,7 +639,7 @@ a:hover {
 }
 
 .intro .intro-title {
-  color: #fff;
+  color: rgba(255, 253, 253, 0.69);
   font-weight: 600;
   font-size: 3rem;
 }
