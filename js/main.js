@@ -114,6 +114,12 @@
 		}
 	});
 
+	// CONTENTS:
+
+	// - ABOUT section
+
+	// -> start skills
+
 	/*--/ set skill progress bar values /--*/
 	const current_time = new Date()
 	let duration = current_time.getFullYear() - 2018 // Current date - date i start coding
@@ -166,22 +172,47 @@
 		)
 		})
 
-	// my Services
+	// end skills <-
+
+	// -> start about me
+	let aboutMe_ListOfParagraphs = [
+		`
+		hello there , i'm Amir Mohammad!  
+		i'm a backend developer (i do the dirty works in the backend of the site &#128521;).
+		i love learning new thing and share my knowledge with you 
+		`,
+		`
+		
+		`,
+	]
+	aboutMe_ListOfParagraphs.forEach(function(paragraph){
+		$('#about-me-paragraphs').append(
+			`
+			<p class="lead"> ` + paragraph + `
+			`
+		)
+		})
+
+	// end about me <-
+	
+	// end ABOUT section
+
+	// - SERVICES section
 	const servicesList = [
 		{
 			title : 'Web Development',
-			icon : 'ion-monitor',
+			icon : '<img class="img-service-icon" src="img/django.png"></img>',
 			description: 'develope your website in the fastest way in python-django'
 		},
 		{
-			title : 'Web Development',
-			icon : 'ion-monitor',
-			description: 'develope your website in the fastest way in python-django'
+			title : 'Python',
+			icon : '<img class="img-service-icon" src="img/python.png"></img>',
+			description: 'write you automation system or python program'
 		},
 		{
-			title : 'Web Development',
-			icon : 'ion-monitor',
-			description: 'develope your website in the fastest way in python-django'
+			title : 'Engineering Programs',
+			icon : '<img class="img-service-icon" src="img/engineering_code.png"></img>',
+			description: 'code every type of computational engineering programs (python, fortran),'
 		},
 	]
 
@@ -191,7 +222,7 @@
 		<div class="col-md-4">
 			<div class="service-box">
 			<div class="service-ico">
-				<span class="ico-circle"><i class="` + dic.icon + `"></i></span>
+				<span class="ico-circle">` + dic.icon + `</span>
 			</div>
 			<div class="service-content">
 				<h2 class="s-title">` + dic.title + `</h2>
@@ -205,8 +236,148 @@
 		)
 		})
 
+	// end SERVICES section
+
+	// - WORK section
+
+	let portfoliosList = [
+		{
+			image: `img/work-1.jpg`,
+			image_alt : `django project`,
+			title: `me and you love you `,
+			tag: `django`,
+			date:`18, sep.2018`,
+		},
+		{
+			image: `img/work-1.jpg`,
+			image_alt : `django project`,
+			title: `me and you love you `,
+			tag: `django`,
+			date:`18, sep.2018`,
+		},
+		{
+			image: `img/work-1.jpg`,
+			image_alt : `django project`,
+			title: `me and you love you `,
+			tag: `django`,
+			date:`18, sep.2018`,
+		},
+	];
+	portfoliosList.forEach(function(dic){
+		$('#works-cards').append(
+		`
+		<div class="col-md-4">
+          <div class="work-box">
+            <a href="` + dic.image + `" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="` + dic.image + `" alt="` + dic.image_alt + `" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">` + dic.title + `</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">` + dic.tag + `</span> / <span class="w-date">` + dic.date + `</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+		`
+		)
+		})
+
+		// end WORK section
+
+		// BLOG section
+
+		let blogList = [
+			{
+				image: `img/work-1.jpg`,
+				image_alt : `django project`,
+				href:``,
+				title: `me and you love you `,
+				description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
+				tag: `django`,
+				date:`18, sep.2018`,
+				reading_time:`10 min`,
+				author:`hamidipour`,
+				author_image:`img/me_p.jpg`,
+				author_image_alt:`hamidi pour`,
+			},
+			{
+				image: `img/work-1.jpg`,
+				image_alt : `django project`,
+				href:``,
+				title: `me and you love you `,
+				description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
+				tag: `django`,
+				date:`18, sep.2018`,
+				reading_time:`10 min`,
+				author:`hamidipour`,
+				author_image:`img/me_p.jpg`,
+				author_image_alt:`hamidi pour`,
+			},
+			{
+				image: `img/work-1.jpg`,
+				image_alt : `django project`,
+				href:``,
+				title: `me and you love you `,
+				description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
+				tag: `django`,
+				date:`18, sep.2018`,
+				reading_time:`10 min`,
+				author:`hamidipour`,
+				author_image:`img/me_p.jpg`,
+				author_image_alt:`hamidi pour`,
+			},
+		];
+		blogList.forEach(function(dic){
+			$('#blog-cards').append(
+			`
+	<div class="col-md-4">
+		<div class="card card-blog">
+		  <div class="card-img">
+			<a href="` + dic.href + `"><img src="` + dic.image + `" alt="` + dic.image_alt + `" class="img-fluid"></a>
+		  </div>
+		  <div class="card-body">
+			<div class="card-category-box">
+			  <div class="card-category">
+				<h6 class="category">` + dic.tag + `</h6>
+			  </div>
+			</div>
+			<h3 class="card-title"><a href="blog-single.html">` + dic.title + `</a></h3>
+			<p class="card-description">
+			` + dic.description + `
+			</p>
+		  </div>
+		  <div class="card-footer">
+			<div class="post-author">
+			  <a href="#about">
+				<img src="` + dic.author_image + `" alt="` + dic.author_image_alt + `" class="avatar rounded-circle">
+				<span class="author">` + dic.author + `</span>
+			  </a>
+			</div>
+			<div class="post-date">
+			  <span class="ion-ios-clock-outline"></span> ` + dic.reading_time + `
+			</div>
+		  </div>
+		</div>
+	  </div>
+			`
+			)
+			})
 	
 
 	
+
+		
 
 })(jQuery);

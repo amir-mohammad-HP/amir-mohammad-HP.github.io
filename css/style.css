@@ -98,6 +98,11 @@ a:hover {
   }
 }
 
+.quote-img {
+  height: 140px;
+  width: 140px;
+}
+
 .overlay-mf {
   /* background-color: #6184D8; */
   background-color: #0078ff;
@@ -755,6 +760,11 @@ a:hover {
   color: #4e4e4e;
 }
 
+.img-service-icon {
+  position:relative;
+  height: 70px;
+  width: 70px;
+}
 /*======================================
 //--//-->   COUNTER
 ======================================*/
