@@ -987,6 +987,15 @@ a:hover {
   padding: 18px;
   font-style: italic;
 }
+/* codes */
+.code-bg{
+  background-color:#d7d7d7;
+}
+
+.cm-s-default {
+  padding: 18px;
+  font-style: italic;
+}
 
 /*------/ Comments /------*/
 

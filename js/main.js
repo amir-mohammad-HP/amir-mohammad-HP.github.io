@@ -424,6 +424,19 @@
 	// end social media
 	
 
+	// BLOG pages:
+	 
+
+		// $('#python_code').addClass('cm-s-default')
+		let code = $('#python_code').text();
+		$('#python_code').text('');
+		let elem = $('#python_code')[0];
+		CodeMirror.runMode(
+			code,
+			'python',
+			elem
+		  );
+
 	
 
 		
