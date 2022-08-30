@@ -113,6 +113,17 @@
 			}
 		}
 	});
+	$('#testimonial2-mf').owlCarousel({
+		margin: 20,
+		autoplay: true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	})
 
 	// CONTENTS:
 
@@ -301,45 +312,45 @@
 		// BLOG section
 
 		let blogList = [
-			{
-				image: `img/work-1.jpg`,
-				image_alt : `django project`,
-				href:``,
-				title: `me and you love you `,
-				description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
-				tag: `django`,
-				date:`18, sep.2018`,
-				reading_time:`10 min`,
-				author:`hamidipour`,
-				author_image:`img/me_p.jpg`,
-				author_image_alt:`hamidi pour`,
-			},
-			{
-				image: `img/work-1.jpg`,
-				image_alt : `django project`,
-				href:``,
-				title: `me and you love you `,
-				description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
-				tag: `django`,
-				date:`18, sep.2018`,
-				reading_time:`10 min`,
-				author:`hamidipour`,
-				author_image:`img/me_p.jpg`,
-				author_image_alt:`hamidi pour`,
-			},
-			{
-				image: `img/work-1.jpg`,
-				image_alt : `django project`,
-				href:``,
-				title: `me and you love you `,
-				description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
-				tag: `django`,
-				date:`18, sep.2018`,
-				reading_time:`10 min`,
-				author:`hamidipour`,
-				author_image:`img/me_p.jpg`,
-				author_image_alt:`hamidi pour`,
-			},
+			// {
+			// 	image: `img/work-1.jpg`,
+			// 	image_alt : `django project`,
+			// 	href:``,
+			// 	title: `me and you love you `,
+			// 	description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
+			// 	tag: `django`,
+			// 	date:`18, sep.2018`,
+			// 	reading_time:`10 min`,
+			// 	author:`hamidipour`,
+			// 	author_image:`img/me_p.jpg`,
+			// 	author_image_alt:`hamidi pour`,
+			// },
+			// {
+			// 	image: `img/work-1.jpg`,
+			// 	image_alt : `django project`,
+			// 	href:``,
+			// 	title: `me and you love you `,
+			// 	description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
+			// 	tag: `django`,
+			// 	date:`18, sep.2018`,
+			// 	reading_time:`10 min`,
+			// 	author:`hamidipour`,
+			// 	author_image:`img/me_p.jpg`,
+			// 	author_image_alt:`hamidi pour`,
+			// },
+			// {
+			// 	image: `img/work-1.jpg`,
+			// 	image_alt : `django project`,
+			// 	href:``,
+			// 	title: `me and you love you `,
+			// 	description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
+			// 	tag: `django`,
+			// 	date:`18, sep.2018`,
+			// 	reading_time:`10 min`,
+			// 	author:`hamidipour`,
+			// 	author_image:`img/me_p.jpg`,
+			// 	author_image_alt:`hamidi pour`,
+			// },
 		];
 		blogList.forEach(function(dic){
 			$('#blog-cards').append(
@@ -376,6 +387,41 @@
 			`
 			)
 			})
+
+	// end BLOG section
+
+	// social media 
+		let sociaMedia = [
+			{
+				address: 'https://github.com/amir-mohammad-HP',
+				icon: 'ion-social-github'
+			},
+			{
+				address: 'https://www.instagram.com/a_m.h_p/',
+				icon: 'ion-social-instagram'
+			},
+			// {
+			// 	address: '',
+			// 	icon: 'ion-social-linkedin'
+			// },
+			
+		];
+		sociaMedia.forEach(function(dic){
+			$('#social-media-items').append(
+			`
+			<li>
+				<a href="` + dic.address + `" target="blank">
+					<span class="ico-circle">
+						<i class="` + dic.icon + `"></i>
+					</span>
+				</a>
+			</li>
+			`
+			)
+			})
+
+
+	// end social media
 	
 
 	
