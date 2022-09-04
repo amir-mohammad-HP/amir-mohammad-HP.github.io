@@ -255,25 +255,28 @@
 
 	let portfoliosList = [
 		{
-			image: `img/work-1.jpg`,
-			image_alt : `django project`,
-			title: `me and you love you `,
-			tag: `django`,
-			date:`18, sep.2018`,
+			image: `img/default-project-bg.jpg`,
+			image_alt : ``,
+			link: 'https://github.com/amir-mohammad-HP/anymarker',
+			title: `AnyMarker `,
+			tag: `django | python | web`,
+			date:`20, aug.2022`,
 		},
 		{
-			image: `img/work-1.jpg`,
-			image_alt : `django project`,
-			title: `me and you love you `,
-			tag: `django`,
-			date:`18, sep.2018`,
+			image: `https://raw.githubusercontent.com/amir-mohammad-HP/local_library_webapp/main/app_screenshots/add%20book.png`,
+			image_alt : `local library management`,
+			link: 'https://github.com/amir-mohammad-HP/local_library_webapp',
+			title: `Local Library Management`,
+			tag: `django | python`,
+			date:`10, aug.2022`,
 		},
 		{
-			image: `img/work-1.jpg`,
-			image_alt : `django project`,
-			title: `me and you love you `,
-			tag: `django`,
-			date:`18, sep.2018`,
+			image: `https://raw.githubusercontent.com/amir-mohammad-HP/amir-mohammad-HP.github.io/main/img/am-hp.png`,
+			image_alt : `am-hp.ir`,
+			link: 'https://github.com/amir-mohammad-HP/amir-mohammad-HP.github.io',
+			title: `AM-HP.ir`,
+			tag: `github pages | javascript | jquery `,
+			date:`25, aug.2022`,
 		},
 	];
 	portfoliosList.forEach(function(dic){
@@ -281,7 +284,7 @@
 		`
 		<div class="col-md-4">
           <div class="work-box">
-            <a href="` + dic.image + `" data-lightbox="gallery-mf">
+            <a href="` + dic.link + `" target="blank">
               <div class="work-img">
                 <img src="` + dic.image + `" alt="` + dic.image_alt + `" class="img-fluid">
               </div>
@@ -290,7 +293,7 @@
                   <div class="col-sm-8">
                     <h2 class="w-title">` + dic.title + `</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">` + dic.tag + `</span> / <span class="w-date">` + dic.date + `</span>
+                      <span class="w-ctegory">` + dic.tag + `</span>  <span class="w-date">` + dic.date + `</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -312,45 +315,48 @@
 		// BLOG section
 
 		let blogList = [
-			// {
-			// 	image: `img/work-1.jpg`,
-			// 	image_alt : `django project`,
-			// 	href:``,
-			// 	title: `me and you love you `,
-			// 	description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
-			// 	tag: `django`,
-			// 	date:`18, sep.2018`,
-			// 	reading_time:`10 min`,
-			// 	author:`hamidipour`,
-			// 	author_image:`img/me_p.jpg`,
-			// 	author_image_alt:`hamidi pour`,
-			// },
-			// {
-			// 	image: `img/work-1.jpg`,
-			// 	image_alt : `django project`,
-			// 	href:``,
-			// 	title: `me and you love you `,
-			// 	description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
-			// 	tag: `django`,
-			// 	date:`18, sep.2018`,
-			// 	reading_time:`10 min`,
-			// 	author:`hamidipour`,
-			// 	author_image:`img/me_p.jpg`,
-			// 	author_image_alt:`hamidi pour`,
-			// },
-			// {
-			// 	image: `img/work-1.jpg`,
-			// 	image_alt : `django project`,
-			// 	href:``,
-			// 	title: `me and you love you `,
-			// 	description:`djkkln  dskhfk dshfajksf djn  sdffjk dsfjh `,
-			// 	tag: `django`,
-			// 	date:`18, sep.2018`,
-			// 	reading_time:`10 min`,
-			// 	author:`hamidipour`,
-			// 	author_image:`img/me_p.jpg`,
-			// 	author_image_alt:`hamidi pour`,
-			// },
+			{
+				image: `https://raw.githubusercontent.com/amir-mohammad-HP/django4-SampleCode/main/Email%20Authentication/vector.jpg`,
+				image_alt : `Email authentication django`,
+				href:`https://github.com/amir-mohammad-HP/django4-SampleCode/tree/main/Email%20Authentication`,
+				title: `Email Authentication with Django `,
+				description:
+					`
+					how to authenticate users with email in django and create a email authentication system
+					`,
+				tag: `django | web`,
+				date:`1, sep.2022`,
+				reading_time:`10 min`,
+				author:`hamidipour`,
+				author_image:`img/me_p.jpg`,
+				author_image_alt:`hamidi pour`,
+			},
+			{
+				image: `https://raw.githubusercontent.com/amir-mohammad-HP/django4-SampleCode/main/model%20signals/vector.jpg`,
+				image_alt : `django model signal`,
+				href:`https://github.com/amir-mohammad-HP/django4-SampleCode/tree/main/model%20signals`,
+				title: `how to use django signals with models`,
+				description:`some times we need do some task after our models create, modify or delete and singnals are the solution`,
+				tag: `django | web`,
+				date:`25, aug.2022`,
+				reading_time:` < 3 min`,
+				author:`hamidipour`,
+				author_image:`img/me_p.jpg`,
+				author_image_alt:`hamidi pour`,
+			},
+			{
+				image: `https://raw.githubusercontent.com/amir-mohammad-HP/django4-SampleCode/main/ImageAdminPage/vector.jpg`,
+				image_alt : `image admin page preview`,
+				href:`https://github.com/amir-mohammad-HP/django4-SampleCode/tree/main/ImageAdminPage`,
+				title: `how to view images on the django admin page`,
+				description:`it feels good to have a view of our uploaded images in the admin page`,
+				tag: `django | web`,
+				date:`25, aug.2022`,
+				reading_time:`5 min`,
+				author:`hamidipour`,
+				author_image:`img/me_p.jpg`,
+				author_image_alt:`hamidi pour`,
+			},
 		];
 		blogList.forEach(function(dic){
 			$('#blog-cards').append(
