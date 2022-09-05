@@ -372,7 +372,7 @@
 				<h6 class="category">` + dic.tag + `</h6>
 			  </div>
 			</div>
-			<h3 class="card-title"><a href="blog-single.html">` + dic.title + `</a></h3>
+			<h3 class="card-title"><a href="` + dic.href + `">` + dic.title + `</a></h3>
 			<p class="card-description">
 			` + dic.description + `
 			</p>
