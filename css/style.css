@@ -724,8 +724,15 @@ a:hover {
 }
 
 .position {
-  margin-left: 77%;
+  margin-left: 75%;
 }
+
+/* @media (min-width: 1200px) {
+  .position {
+    margin-left: 77%;
+  }
+} */
+
 @media (max-width: 1200px) {
   .position {
     margin-left: 70%;
