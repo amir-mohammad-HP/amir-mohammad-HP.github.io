@@ -723,6 +723,62 @@ a:hover {
   background-color: #0078ff;
 }
 
+.position {
+  margin-left: 77%;
+}
+@media (max-width: 1200px) {
+  .position {
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .position {
+    margin-left: 57%;
+  }
+}
+
+@media (max-width: 767px) {
+  .position {
+    margin-left: 73%;
+  }
+}
+
+@media (max-width: 511px) {
+  .position {
+    margin-left: 71%;
+  }
+}
+
+@media (max-width: 481px) {
+  .position {
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 467px) {
+  .position {
+    margin-left: 68%;
+  }
+}
+
+@media (max-width: 443px) {
+  .position {
+    margin-left: 66%;
+  }
+}
+
+@media (max-width: 420px) {
+  .position {
+    margin-left: 60%;
+  }
+}
+
+@media (max-width: 368px) {
+  .position {
+    margin-left: 54%;
+  }
+}
 /*======================================
 //--//-->   SERVICES
 ======================================*/

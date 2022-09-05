@@ -169,7 +169,7 @@
 	]
 
 	$('#skills').empty();
-	var skills_html = `<p class="title-s">Skill<span class="pull-right" id="skill-duration">from 2018</span></p>`;
+	var skills_html = `<p class="title-s">Skill<span class="position" id="skill-duration">from 2018</span></p>`;
 	$('#skills').html(skills_html)
 	skill_languages.forEach(function(dic){
 		$('#skills').append(
