@@ -400,7 +400,7 @@
 		let sociaMedia = [
 			{
 				address: 'https://github.com/amir-mohammad-HP',
-				icon: 'ion-social-github'
+				icon: 'ion-social-octocat'
 			},
 			{
 				address: 'https://www.instagram.com/a_m.h_p/',
@@ -417,7 +417,7 @@
 			`
 			<li>
 				<a href="` + dic.address + `" target="blank">
-					<span class="ico-circle">
+					<span class="ico-circle ">
 						<i class="` + dic.icon + `"></i>
 					</span>
 				</a>
