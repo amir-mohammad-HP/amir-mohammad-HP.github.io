@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script>
+        let shorterLinks = [
+            {   
+                short_link : 'a',
+                neme : 'rahneshan certification',
+                link : ' https://drive.google.com/file/d/1q9HqhMyLrc-MtBcTYnkgU-0VESReqcR-/view?usp=sharing',
+            },
+            {
+                short_link : 'b',
+                neme : 'rahneshan letter of commendation',
+                link : 'https://drive.google.com/file/d/1RLlDZp4lazzgMZcQjC_aYQZ6OgbDC_sr/view?usp=sharing',
+            },
+        ];
+        (function($){
+            // let link = $(location).attr('href') ;
+            const url = new URL($(location).attr('href'));
+            const params = new URLSearchParams(url.search);
+            let redirectDoc = params.get('doc');
+            shorterLinks.forEach(function (obj){
+                if (obj.short_link === redirectDoc){
+                    window.location.replace(obj.link)
+                }
+            })
+        })(jQuery);
+    </script>
+ 
+</head>
+</html>
