@@ -12,13 +12,18 @@
   // Preloader
   $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
+      $('#preloader').delay(10).fadeOut('slow', function () {
         $(this).remove();
       });
     }
   });
 
   // Back to top button
+//   const easeInOutExpo = (x) => {
+// 	return x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ?
+// 		pow( 2, 20 * x - 10 ) / 2 :
+// 		( 2 - pow( 2, -20 * x + 10 ) ) / 2;
+// 	};
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -27,7 +32,7 @@
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    $('html, body').animate({scrollTop : 0},1500); // "easeInOutExpo"
     return false;
   });
 
@@ -52,7 +57,7 @@
 			if (target.length) {
 				$('html, body').animate({
 					scrollTop: (target.offset().top - navHeight + 5)
-				}, 1000, "easeInOutExpo");
+				}, 1000); //"easeInOutExpo"
 				return false;
 			}
 		}
@@ -83,9 +88,9 @@
 			$('.navbar-expand-md').removeClass('navbar-reduce');
 		}
 		if ($(window).scrollTop() > top) {
-			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
+			$('.scrolltop-mf').fadeIn(1000); //"easeInOutExpo"
 		} else {
-			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
+			$('.scrolltop-mf').fadeOut(1000); //"easeInOutExpo"
 		}
 	});
 
@@ -139,7 +144,7 @@
 	const skill_languages = [
 		{
 			langName : 'Python',
-			years : 4,
+			years : 3,
 		},
 		{
 			langName : 'Django <small>(python framework)</small>',
