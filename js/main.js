@@ -411,10 +411,10 @@
 				address: 'https://www.instagram.com/a_m.h_p/',
 				icon: 'ion-social-instagram'
 			},
-			// {
-			// 	address: '',
-			// 	icon: 'ion-social-linkedin'
-			// },
+			{
+				address: 'https://linkedin.com/in/am-hp/',
+				icon: 'ion-social-linkedin'
+			},
 			
 		];
 		sociaMedia.forEach(function(dic){
